@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class MusicController < ApplicationController
 
   def index
 

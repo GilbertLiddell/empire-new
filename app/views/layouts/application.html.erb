@@ -28,7 +28,7 @@
   <div id="wrapper-header" class="wrapper">
 
     <div id="menu-container">
-      <div id="menu">home  |  services  |  music  |  the band  |  contact </div>
+      <div id="menu"><%= link_to "home", :action=>"index", :controller=>"home" %>  |  <%= link_to "services", :action=>"index", :controller=>"services" %>  |  <%= link_to "music", :action=>"index", :controller=>"music" %>  |  <%= link_to "band", :action=>"index", :controller=>"band" %>  |  <%= link_to "contact", :action=>"index", :controller=>"contact" %> </div>
       <img src="images/logo-wee.png" id="empire-main-logo">
       <span style="font-family: 'Schoolbell', arial, serif; text-align:right; float:right; padding-top:26px; font-size:16px">"empire will make your party a night to remember"</span>
 

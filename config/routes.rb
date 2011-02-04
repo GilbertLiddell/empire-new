@@ -42,4 +42,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id.:format'
 
   map.resources :home, :collection => { :index => :get }
+  map.resources :band, :collection => { :index => :get }
+  map.resources :contact, :collection => { :index => :get }
+  map.resources :services, :collection => { :index => :get }
+  map.resources :music, :collection => { :index => :get }
 end

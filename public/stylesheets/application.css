@@ -60,3 +60,9 @@ h2 {
   width: 90px;
 }
 
+a {text-decoration: none; color:white; font-family: 'Schoolbell', arial, serif; font-size:18px;}
+a:link {text-decoration: none; font-family: 'Schoolbell', arial, serif; font-size:18px;}
+a:visited {text-decoration: none; font-family: 'Schoolbell', arial, serif; font-size:18px;}
+a:active {text-decoration: none; color: red; font-family: 'Schoolbell', arial, serif; font-size:18px;}
+a:hover {text-decoration: underline; font-family: 'Schoolbell', arial, serif; font-size:18px;}
+
