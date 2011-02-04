@@ -41,26 +41,22 @@ h2 {
     color: white;
 }
 
-h3 {
-    color: #333333;
-    padding: 0;
-}
-
 .left {
   float: left;
-  padding: 0px 10px 0px 0px;
+  padding: 10px 10px 0px 0px;
   width: 40%;
 }
 
 .middle {
   top: 10px;
+  padding-top: 10px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
 .right {
   float: right;
-  padding: 0px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   width: 90px;
 }
 
