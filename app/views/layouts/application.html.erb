@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>
+    Empire Band - Scotlands Wedding and Function Band
+  </title>
+
+  <%= stylesheet_link_tag 'application', 'jquery-ui-1.8.2.custom.css' %>
+  <%= javascript_include_tag 'custom/jquery-1.4.2.min.js', 'src/jquery.cycle.all.js' %>
+
+  <link rel="icon" href="images/favicon.ico" type="image/ico"/>
+  <%= yield(:head) %>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('.slideshow').cycle({
+              fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+          });
+      });
+  </script>
+</head>
+
+<body>
+<div id="background-header">
+  <div id="header-spacer" class="spacer"></div>
+  <div id="wrapper-header" class="wrapper">
+
+    <div id="menu-container">
+      <div id="menu">home | services | music | the band | contact </div>
+      <img src="images/logo-wee.png" id="empire-main-logo">
+
+      <div id="image=spacer" class="spacer"></div>
+      <div style="float: left; width: 50%;">
+        <img src="images/background.jpg" width="270" height="170">
+      </div>
+      <div style="float: right; width: 50%;">
+        <div id="slideshow" class="slideshow">
+          <img src="images/image1.jpg" width="270" height="170" class="first"/>
+          <img src="images/image2.jpg" width="270" height="170"/>
+          <img src="images/image3.jpg" width="270" height="170"/>
+          <img src="images/image4.jpg" width="270" height="170"/>
+          <img src="images/image5.jpg" width="270" height="170"/>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-container">
+      <div id="spacer-hidden" class="spacer-hidden">c</div>
+      <%= yield %>
+    </div>
+  </div>
+</div>
+
+
+<div id="footer-spacer" class="spacer"></div>
+<div id="footer" class="footer-wrapper">
+  <div class="left">
+    mail: enquiries@empireband.co.uk
+  </div>
+  <div class="right">
+    tel: 07971893707
+    <img src="images/facebook.png" width="60px" height="20px">
+  </div>
+  <div class="middle">
+    www.empireband.co.uk
+  </div>
+</div>
+
+</body>
+</html>
+
