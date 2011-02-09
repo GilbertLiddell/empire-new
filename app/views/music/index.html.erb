@@ -1,11 +1,53 @@
-<div style="height:60px; border-bottom:1px dotted #333333;">
-    <div style="float: left; width: 100%;">
-      <h2>music</h2>
-      <div style="float: left; width: 50%;">
-        Listen or download mp3's of the band and take a look at the music we play.
-      </div>
-      <div style="float: right; margin-top:-30px">
-         <img src="images/mp3.gif" style="text-align:center;" width="40px" height="40px">
-      </div>
+<div style="height:130px;">
+  <div style="float: left; width: 100%; border-bottom:1px dotted #333333;">
+    <h2>music</h2>
+
+    <div style="float: left; width: 50%;">
+       Listen or download mp3's of the band and take a look at the music we play.
     </div>
+    <div style="float: right; margin-top:-50px">
+      <img src="images/mp3.gif" style="text-align:center;" width="40px" height="40px">
+    </div>
+  </div>
+</div>
+
+<div id="accordion">
+  <h3><a href="#" class="accordion-header">Songs</a></h3>
+
+  <div>
+    <p>
+    <table class="table" id="music-table">
+      <tr class="rowa">
+          <th>Decade</th>
+          <th>Title</th>
+          <th>Artist</th>
+        </tr>
+      <% for song_head in @song_headers %>
+            <tr class="rowb">
+              <th><%= h song_head.decade %></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+          <% for song in @songs %>
+          <% if song.decade == song_head.decade %>
+              <tr class="rowc">
+              <td></td>
+              <td><%= h song.title %></td>
+              <td><%= h song.artist %></td>
+            </tr>
+          <% end %>
+              <% end %>
+
+      <% end %>
+     </table>
+    </p>
+
+  </div>
+  <h3><a href="#">Example Sets</a></h3>
+
+  <div>
+    <p>[ coming soon ]</p>
+
+  </div>
 </div>

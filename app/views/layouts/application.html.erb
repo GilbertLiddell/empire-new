@@ -8,7 +8,7 @@
 
   <%= stylesheet_link_tag 'application', 'jquery-ui-1.8.2.custom.css' %>
   <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
-  <%= javascript_include_tag 'custom/jquery-1.4.2.min.js', 'src/jquery.cycle.all.js' %>
+  <%= javascript_include_tag 'custom/jquery-1.4.2.min.js', 'src/jquery.cycle.all.js', 'custom/jquery-ui-1.8.2.custom.min.js' %>
 
   <link rel="icon" href="images/favicon.ico" type="image/ico"/>
   <%= yield(:head) %>
@@ -19,6 +19,11 @@
               fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
           });
       });
+
+       $(function() {
+		$( "#accordion" ).accordion();
+	});
+
   </script>
 </head>
 
@@ -34,7 +39,7 @@
 
       <div id="image=spacer" class="spacer"></div>
       <div style="float: left; width: 50%;">
-        <img src="images/Background-new.jpg" width="330" height="190">
+        <img src="images/Empire-LiveMusic.jpg" width="330" height="190">
       </div>
       <div style="float: right; width: 50%;">
         <div id="slideshow" class="slideshow">
