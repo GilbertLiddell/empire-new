@@ -1,7 +1,6 @@
 class ContactsController < ApplicationController
   def index
-    @contacts = Contact.all
-    @pages = Page.find(5)
+    redirect_to :action => 'index', :controller => 'contact'
   end
 
   def send_mail
