@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def index
-    redirect_to :action => 'index', :controller => 'contact'
+    redirect_to :action => 'index', :controller => 'thankyou'
   end
 
   def send_mail
