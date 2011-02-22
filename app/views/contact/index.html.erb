@@ -16,39 +16,46 @@
 
   <div>
     <p><h4>[ use this form to get in touch ]</h4></p>
-    <p>
-      <% form_for :email, :url => { :controller => 'contacts', :action => 'send_mail' } do |f| %>
-          <%= f.label :name %>
-          <br/>
-          <%= f.text_field :name, :size => 60 %>
-          <br/>
-          <%= f.label :emailaddress %>
-          <br/>
-          <%= f.text_field :emailaddress, :size => 60 %>
-          <br/>
-          <%= f.label :contactnumber %>
-          <br/>
-          <%= f.text_field :contactnumber, :size => 60 %>
-          <br/>
-          <%= f.label :subject %>
-          <br/>
-          <%= f.text_field :subject, :size => 60 %>
-          <br/>
-          <%= f.label :message %>
-          <br/>
-          <%= f.text_area :message, :rows => 7, :cols => 48 %>
-          <br/>
-          <%= submit_tag "Send Email " %>
-      <% end %>
-    </p>
+    <% form_for :email, :url => { :controller => 'contacts', :action => 'send_mail' } do |f| %>
+    <div style="height:100px">
+      <div style="float: left; width: 48%; border-top:1px dotted #333333;">
+        <%= f.label :name %>
+        <br/>
+        <%= f.text_field :name, :class => "create_input" %>
+        <br/>
+        <%= f.label :emailaddress %>
+        <br/>
+        <%= f.text_field :emailaddress, :class => "create_input" %>
+        <br/>
+        <%= f.label :contactnumber %>
+        <br/>
+        <%= f.text_field :contactnumber, :class => "create_input" %>
+        <br/>
+        <%= f.label :subject %>
+        <br/>
+        <%= f.text_field :subject, :class => "create_input" %>
+      </div>
+
+      <div style="float: right; width: 50%; border-top:1px dotted #333333">
+        <%= f.label :message %>
+        <br/>
+        <%= f.text_area :message, :rows => 7, :cols => 48, :class => "create_input" %>
+        <br/>
+        <%= submit_tag "Send Email " %>
+      </div>
+    </div>
+    <% end %>
   </div>
 
   <h3><a href="#" class="accordion-header">Other Contact Methods</a></h3>
 
   <div>
-    <p><h4>[ contact us by email, telephone or post ]</h4></p>
+    <p><h4>[ you can also contact us by email or telephone ]</h4></p>
     <p>
-
+      email: enquires@empirband.co.uk
+      <br>
+      <br>
+      telephone: 0797 189 3707
     </p>
   </div>
 </div>

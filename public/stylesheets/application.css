@@ -10,6 +10,21 @@ body {
    color: white;
 }
 
+.create_input{
+    border-right: #000000 1px solid;
+    padding-right: 4px; 
+    border-top: #000000 1px solid;
+    padding-left: 4px;
+    font-size: 8pt;
+    padding-bottom: 1px;
+    border-left: #000000 1px solid;
+    color: #000000;
+    padding-top: 1px;
+    border-bottom: #000000 1px solid;
+    font-family: Tahoma;
+    background-color: darkgray;
+}
+
 #slideshow img { display: none }
 #slideshow img.first { display: block }
 
