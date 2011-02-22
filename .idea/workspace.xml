@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="aab2672e-24c9-4649-a410-5e7364a4f984" name="Default" comment="&#10;test">
+    <list default="true" readonly="true" id="aab2672e-24c9-4649-a410-5e7364a4f984" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gems" afterPath="$PROJECT_DIR$/.gems" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/empire-new.iml" afterPath="$PROJECT_DIR$/.idea/empire-new.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
     </list>
     <ignored path="empire-new.iws" />
@@ -48,19 +45,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="2393" selection-end="2393" vertical-scroll-proportion="0.0">
+            <state line="44" column="54" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.47900763">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gems" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gems" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gems">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.36068702">
+            <state line="9" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,8 +102,8 @@
         <option value="$PROJECT_DIR$/app/controllers/music_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/config/smtp_gmail.yml" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/.gems" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
       </list>
     </option>
   </component>
@@ -581,16 +578,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/.gems">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="2393" selection-end="2393" vertical-scroll-proportion="0.0">
+        <state line="9" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gems">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="257" selection-end="257" vertical-scroll-proportion="0.36068702">
+        <state line="44" column="54" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.47900763">
           <folding />
         </state>
       </provider>

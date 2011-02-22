@@ -42,7 +42,7 @@ Rails::Initializer.run do |config|
           :port           => 25,
           :domain         => 'www.empireband.co.uk',
           :authentication => :login,
-          :user_name      => 'gilbert',
+          :user_name      => 'gilbert@empireband.co.uk',
           :password       => 'Donnington'
   }
 
