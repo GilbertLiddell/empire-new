@@ -39,10 +39,7 @@ test:
 
 production:
   adapter: mysql
-  encoding: utf8
-  reconnect: false
-  database: empire-new_production
+  database: empire-new
   pool: 5
+  timeout: 5000
   username: root
-  password: 
-  host: localhost

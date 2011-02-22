@@ -308,7 +308,7 @@
 /* IE7-/Win - Fix extra vertical space in lists */
 .ui-accordion-icons .ui-accordion-header a {  }
 .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px;  }
-.ui-accordion .ui-accordion-content { font-size:12px; padding-bottom:10px; overflow:hidden; height:250px;}
+.ui-accordion .ui-accordion-content { font-size:12px; padding-bottom:10px; overflow:auto; height:250px; color: #999999; }
 
 .ui-accordion .ui-accordion-content-active { display: block; }/* Autocomplete
 ----------------------------------*/

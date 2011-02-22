@@ -46,4 +46,5 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :contact, :collection => { :index => :get }
   map.resources :services, :collection => { :index => :get }
   map.resources :music, :collection => { :index => :get }
+  map.resources :contacts, :collection => { :index => :get, :send_mail => :post }
 end
