@@ -7,3 +7,4 @@ mysql --version 2.8.1
 rails --version 2.3.8
 rake --version 0.8.7
 rack --version 1.0.1
+tlsmail --version 0.0.1
