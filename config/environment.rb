@@ -35,18 +35,30 @@ Rails::Initializer.run do |config|
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.smtp_settings = {
-          :address        => 'smtp.gmail.com',
-          :port           => 25,
-          :domain         => 'www.empireband.co.uk',
-          :authentication => :login,
-          :user_name      => 'gilbert',
-          :password       => 'Donnington'
-  }
+  #config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.raise_delivery_errors = true
+  #config.action_mailer.smtp_settings = {
+  #        :address        => 'smtp.gmail.com',
+  #        :port           => 25,
+  #        :domain         => 'www.empireband.co.uk',
+  #        :authentication => :login,
+  #        :user_name      => 'gilbert',
+  #        :password       => 'Donnington'
+  #}
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+require 'smtp-tls'
+
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+   :address => "smtp.gmail.com",
+   :port => 587,
+   :domain => "www.empireband.co.uk",
+   :authentication => :plain,
+   :user_name => "gilbert",  # don't put "@gmail.com" here, just your username
+   :password => "Donnington",
+   :enable_starttls_auto => true }
