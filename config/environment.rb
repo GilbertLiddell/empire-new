@@ -51,14 +51,5 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 end
 
-require 'smtp-tls'
-
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-   :address => "smtp.gmail.com",
-   :port => 587,
-   :domain => "www.empireband.co.uk",
-   :authentication => :plain,
-   :user_name => "gilbert",  # don't put "@gmail.com" here, just your username
-   :password => "Donnington",
-   :enable_starttls_auto => true }
+require 'tlsmail'
+Net::SMTP.enable_tls( OpenSSL::SSL::VERIFY_NONE)
