@@ -1,6 +1,7 @@
 <div style="height:100px">
     <div style="float: left; width: 48%;">
-      <h2>music</h2>
+      <h2><%= link_to "music", :controller => "music", :action => "index", :class => "home-links" %></h2>
+
       <div style="float: left; width: 80%;">
         Listen or download mp3's of the band and take a look at the music we play.
       </div>
@@ -10,7 +11,7 @@
     </div>
     
     <div style="float: right; width: 50%;">
-      <h2>the band</h2>
+      <h2><%= link_to "the band", :controller => "band", :action => "index", :class => "home-links" %></h2>
       <div style="float: left; width: 80%;">
         Meet the members of the band and discover their musical backgrounds.
       </div>
@@ -23,7 +24,7 @@
 
 <div style="height:100px">
     <div style="float: left; width: 48%; border-top:1px dotted #333333;">
-      <h2>services</h2>
+      <h2><%= link_to "services", :controller => "services", :action => "index", :class => "home-links" %></h2>
       <div style="float: left; width: 80%;">
         Find out exactly what to expect when you book us, you'll be surprised how much we do.
       </div>
@@ -33,7 +34,7 @@
     </div>
 
     <div style="float: right; width: 50%; border-top:1px dotted #333333">
-      <h2>contact</h2>
+      <h2><%= link_to "contact", {:controller => "contact", :action => "index"}, :class => "home-links" %></h2>
       <div style="float: left; width: 80%;">
         Want to know more or book the band? Get in touch by any means possible.
       </div>

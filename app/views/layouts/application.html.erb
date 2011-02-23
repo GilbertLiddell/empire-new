@@ -34,7 +34,7 @@
 
     <div id="menu-container">
       <div id="menu"><%= link_to "home", :action=>"index", :controller=>"home" %>  |  <%= link_to "services", :action=>"index", :controller=>"services" %>  |  <%= link_to "music", :action=>"index", :controller=>"music" %>  |  <%= link_to "band", :action=>"index", :controller=>"band" %>  |  <%= link_to "contact", :action=>"index", :controller=>"contact" %> </div>
-      <img src="images/logo-wee.png" id="empire-main-logo">
+      <%= link_to image_tag("/images/logo-wee.png"), :action=>"index", :controller=>"home" %>
       <span style="font-family: 'Schoolbell', arial, serif; text-align:right; float:right; padding-top:26px; font-size:16px">"empire will make your party a night to remember"</span>
 
       <div id="image=spacer" class="spacer"></div>

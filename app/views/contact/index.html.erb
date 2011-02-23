@@ -19,25 +19,25 @@
     <% form_for :email, :url => { :controller => 'contacts', :action => 'send_mail' } do |f| %>
     <div style="height:100px">
       <div style="float: left; width: 48%; border-top:1px dotted #333333;">
-        <%= f.label :name %>
+        <%= f.label :name, "name" %>
         <br/>
         <%= f.text_field :name, :class => "create_input" %>
         <br/>
-        <%= f.label :emailaddress %>
+        <%= f.label :emailaddress, "email address" %>
         <br/>
         <%= f.text_field :emailaddress, :class => "create_input" %>
         <br/>
-        <%= f.label :contactnumber %>
+        <%= f.label :contactnumber, "contact number" %>
         <br/>
         <%= f.text_field :contactnumber, :class => "create_input" %>
         <br/>
-        <%= f.label :subject %>
+        <%= f.label :subject, "subject" %>
         <br/>
         <%= f.text_field :subject, :class => "create_input" %>
       </div>
 
       <div style="float: right; width: 50%; border-top:1px dotted #333333">
-        <%= f.label :message %>
+        <%= f.label :message, "message details" %>
         <br/>
         <%= f.text_area :message, :rows => 7, :cols => 48, :class => "create_input" %>
         <br/>
