@@ -31,7 +31,7 @@
 <div id="background-header">
   <div id="header-spacer" class="spacer"></div>
   <div id="wrapper-header" class="wrapper">
-
+    <%= link_to image_tag("/images/facebook-icon.png", :class => "facebook-icon"), "http://www.facebook.com/pages/Empire/139442822756068" %>    
     <div id="menu-container">
       <div id="menu"><%= link_to "home", :action=>"index", :controller=>"home" %>  |  <%= link_to "services", :action=>"index", :controller=>"services" %>  |  <%= link_to "music", :action=>"index", :controller=>"music" %>  |  <%= link_to "band", :action=>"index", :controller=>"band" %>  |  <%= link_to "contact", :action=>"index", :controller=>"contact" %> </div>
       <%= link_to image_tag("/images/logo-wee.png"), :action=>"index", :controller=>"home" %>
